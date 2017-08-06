@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:id="@+id/score_layout_id"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="4dp"
+                      android:background="@drawable/log"
+                      android:padding="4dp"
+                      tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result Card"
+            android:textAlignment="center"
+            android:textColor="@color/black_text"
+            android:textSize="30sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="@dimen/dimension_eight"
+            android:layout_marginTop="@dimen/dimension_eight"
+            android:background="@color/black_text"/>
+        <Button
+            android:id="@+id/result_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Print Result Card"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimension_eight"
+                android:text="Total Score"
+                android:textColor="@color/black_text"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="score"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimension_eight"
+                android:text="Report"
+                android:textColor="@color/black_text"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Status"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="@dimen/dimension_eight"
+            android:layout_marginTop="@dimen/dimension_eight"
+            android:background="@color/black_text"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/grade_status_linear_layout"
+            android:visibility="gone"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_a"
+                style="@style/score_question_no"
+                android:hint="QuestionA"/>
+
+            <TextView
+                android:id="@+id/question_status_text_a"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusA"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_b"
+                style="@style/score_question_no"
+                android:hint="QuestionB"/>
+
+            <TextView
+                android:id="@+id/question_status_text_b"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusB"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_c"
+                style="@style/score_question_no"
+                android:hint="QuestionC"/>
+
+            <TextView
+                android:id="@+id/question_status_text_c"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_d"
+                style="@style/score_question_no"
+                android:hint="QuestionD"/>
+
+            <TextView
+                android:id="@+id/question_status_text_d"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusD"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_e"
+                style="@style/score_question_no"
+                android:hint="QuestionE"/>
+
+            <TextView
+                android:id="@+id/question_status_text_e"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusE"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_f"
+                style="@style/score_question_no"
+                android:hint="QuestionF"/>
+
+            <TextView
+                android:id="@+id/question_status_text_f"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_g"
+                style="@style/score_question_no"
+                android:hint="QuestionG"/>
+
+            <TextView
+                android:id="@+id/question_status_text_g"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusG"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_h"
+                style="@style/score_question_no"
+                android:hint="QuestionH"/>
+
+            <TextView
+                android:id="@+id/question_status_text_h"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusH"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_i"
+                style="@style/score_question_no"
+                android:hint="Question I"/>
+
+            <TextView
+                android:id="@+id/question_status_text_i"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusI"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_j"
+                style="@style/score_question_no"
+                android:hint="QuestionJ"/>
+
+            <TextView
+                android:id="@+id/question_status_text_j"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusJ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_k"
+                style="@style/score_question_no"
+                android:hint="QuestionK"/>
+
+            <TextView
+                android:id="@+id/question_status_text_k"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusK"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_l"
+                style="@style/score_question_no"
+                android:hint="QuestionL"/>
+
+            <TextView
+                android:id="@+id/question_status_text_l"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusJ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/question_text_m"
+                style="@style/score_question_no"
+                android:hint="QuestionM"/>
+
+            <TextView
+                android:id="@+id/question_status_text_m"
+                style="@style/score_question_status"
+                android:hint="QuestionStatusM"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/exit_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_blue_light"
+            android:padding="@dimen/dimension_eight"
+            android:text="EXIT NOW"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"/>
+    </LinearLayout>
+</RelativeLayout>

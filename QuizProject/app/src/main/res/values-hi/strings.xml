@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">प्रश्नोत्तरी परियोजना</string>
+    <string name="back_menu">वापस</string>
+    <string name="exit_menu">बाहर जाएं</string>
+    <string name="search_menu">खोजें</string>
+    <string name="about_menu">बारे में</string>
+    <string name="score_menu">स्कोर</string>
+</resources>

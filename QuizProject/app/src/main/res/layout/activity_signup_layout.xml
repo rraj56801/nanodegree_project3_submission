@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:id="@+id/signup_layout_id"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="4dp"
+                      android:background="@drawable/log"
+                      android:padding="4dp"
+                      tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Welcome to Quiz World "
+            android:textAlignment="center"
+            android:textColor="@color/black_text"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/login_textView"
+                android:text="User ID"/>
+
+            <EditText
+                android:id="@+id/signup_user_edittext_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="User ID here"
+                android:padding="@dimen/dimension_four"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/login_textView"
+                android:text="Name"/>
+
+            <EditText
+                android:id="@+id/signup_first_name_edittext_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dimension_four"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/signup_last_name_edittext_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dimension_four"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/login_textView"
+                android:text="Mobile"/>
+
+            <EditText
+                android:id="@+id/signup_mobile_edittext_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="(+91)"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/dimension_four"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/login_textView"
+                android:text="Email"/>
+
+            <EditText
+                android:id="@+id/signup_email_edittext_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="yourid@yourdomain.om"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimension_four"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/login_textView"
+                android:text="Password"/>
+
+            <EditText
+                android:id="@+id/signup_password_edittext_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password here"
+                android:inputType="numberPassword"
+                android:maxLength="8"
+                android:padding="@dimen/dimension_four"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/login_textView"
+                android:text="Confirm Password"/>
+
+            <EditText
+                android:id="@+id/signup_confirm_password_edittext_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:maxLength="9"
+                android:padding="@dimen/dimension_four"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/signup_button_id"
+                style="@style/signup_button"
+                android:text="Sign Up"/>
+
+            <Button
+                android:id="@+id/login_button_id"
+                style="@style/login_button"
+                android:text="Log In"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

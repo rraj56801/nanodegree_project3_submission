@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:id="@+id/login_layout_id"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="4dp"
+                      android:background="@drawable/log"
+                      android:padding="4dp"
+                      tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Welcome to Quiz World "
+            android:textAlignment="center"
+            android:textColor="@color/black_text"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            style="@style/login_linear_layout">
+
+            <TextView
+                android:text="User ID"
+                style="@style/login_textView"/>
+
+            <EditText
+                android:id="@+id/user_edittext_id"
+                android:hint="User ID here"
+                style="@style/login_userid_editText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/login_linear_layout">
+
+            <TextView
+                android:text="Password"
+                style="@style/login_textView"/>
+
+            <EditText
+                android:id="@+id/password_edittext_id"
+                android:hint="Password here"
+                style="@style/login_password_editText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/login_linear_layout">
+
+            <TextView
+                android:text="Verification code"
+                style="@style/login_textView"/>
+
+            <EditText
+                android:id="@+id/otp_edittext_id"
+                android:hint="0"
+                style="@style/login_verification_editText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/login_linear_layout">
+
+            <Button
+                android:id="@+id/signup_id"
+                android:text="Sign Up"
+                style="@style/signup_button"/>
+
+            <Button
+                android:id="@+id/login_id"
+                android:text="Log In"
+                style="@style/login_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/login_linear_layout">
+
+            <TextView
+                android:text="Forgot password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="@dimen/dimension_four"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/password_recovery_button_id"
+                android:text="Recover"
+                style="@style/recovery_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

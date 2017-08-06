@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/main_layout_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:context="com.example.android.quizproject.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_login_layout"/>
+
+            <include layout="@layout/activity_signup_layout"/>
+
+            <include layout="@layout/activity_password_recovery_layout"/>
+
+            <include layout="@layout/activity_question_index_layout"/>
+
+            <include layout="@layout/activity_answer_layout"/>
+
+            <include layout="@layout/activity_score_layout"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
