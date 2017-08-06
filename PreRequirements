@@ -1,0 +1,10 @@
+Hi, in this application I have used SQLite Database to authorise login using SMS based verification code. So, in order to Test this application. I am bypassing the login.
+-> On the LogIn page
+    Required fields:
+        UserId:abcd
+	password:1234
+	otp:0000
+And then press LogIn to continue the next.
+-> On SignUp page, kindly don't click on SignUp button otherwise app will crash.
+-> On Recover Password page kindly don't click on Recover button otherwise App wil crash.
+Thank you!
